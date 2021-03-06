@@ -10,33 +10,74 @@
   <script defer src="C:\Users\rutte\desktop\osu-homework\Weather-App\script.js"></script>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <title>Weather App</title>
 </head>
 
 
 <body>
-    <!-- Header Code -->
+<!-- Header Code -->
     <header class = "dashboard">
         <h1>Weather Dashboard</h1>
     </header>
 
-    <!-- Body Code -->
+<!-- Body Code -->
+
+    <!-- Search Bar -->
     <div class = "search">
         <button class = "btn" id = "search-btn">Search</button>
     </div>
 
+    <!-- Full Container -->
     <div class = "container">
-        <div class = "card">
+        <!-- Today's weather container -->
+        <div class = "current-card">
             <div class ="card-body">
                 <h2>City Name</h2>
                 <p>Temperature:</p>
                 <p>Humidity:</p>
                 <p>Wind Speed:</p>
                 <p>UV Index:</p>
+            </div>
+        </div>
+        
+        <!-- 5 day forecast container -->
+        <div class = "forecast">
+            <h3>5-Day Forecast:</h3>
+            <div class = "forecast-container"></div>
+                <div class = "forecast-card" id = "card-1">
+                    <p>Date</p>
+                    <p>Weather Icon</p>
+                    <p>Temp:</p>
+                    <p>Humidity</p>
+                </div>    
+                <div class = "forecast-card" id = "card-2">
+                    <p>Date</p>
+                    <p>Weather Icon</p>
+                    <p>Temp:</p>
+                    <p>Humidity</p>
+                </div>   
+                <div class = "forecast-card" id = "card-3">
+                    <p>Date</p>
+                    <p>Weather Icon</p>
+                    <p>Temp:</p>
+                    <p>Humidity</p>
+                </div>   
+                <div class = "forecast-card" id = "card-4">
+                    <p>Date</p>
+                    <p>Weather Icon</p>
+                    <p>Temp:</p>
+                    <p>Humidity</p>
+                </div>   
+                <div class = "forecast-card" id = "card-5">
+                    <p>Date</p>
+                    <p>Weather Icon</p>
+                    <p>Temp:</p>
+                    <p>Humidity</p>
+                </div>   
             </div>
         </div>
     </div>
